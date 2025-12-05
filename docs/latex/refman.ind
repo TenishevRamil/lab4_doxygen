@@ -1,0 +1,96 @@
+\begin{theindex}
+
+  \item {alphaNum}
+    \subitem {modAlphaCipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {cipher\_error}, \hyperpage{2}
+    \subitem {cipher\_error}, \hyperpage{4}
+  \item {convert}
+    \subitem {modAlphaCipher}, \hyperpage{7}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {modAlphaCipher}, \hyperpage{8}
+    \subitem {RouteCipher}, \hyperpage{14}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {modAlphaCipher}, \hyperpage{9}
+    \subitem {RouteCipher}, \hyperpage{14}
+
+  \indexspace
+
+  \item {find\_space\_positions}
+    \subitem {modAlphaCipher}, \hyperpage{9}
+
+  \indexspace
+
+  \item {getValidCipherText}
+    \subitem {modAlphaCipher}, \hyperpage{10}
+  \item {getValidKey}
+    \subitem {modAlphaCipher}, \hyperpage{10}
+  \item {getValidOpenText}
+    \subitem {modAlphaCipher}, \hyperpage{11}
+  \item {gronsfeld/modAlphaCipher.cpp}, \hyperpage{16}
+  \item {gronsfeld/modAlphaCipher.h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {isCyrillicLetter}
+    \subitem {modAlphaCipher.cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {key}
+    \subitem {modAlphaCipher}, \hyperpage{12}
+    \subitem {RouteCipher}, \hyperpage{15}
+
+  \indexspace
+
+  \item {modAlphaCipher}, \hyperpage{5}
+    \subitem {alphaNum}, \hyperpage{11}
+    \subitem {convert}, \hyperpage{7}
+    \subitem {decrypt}, \hyperpage{8}
+    \subitem {encrypt}, \hyperpage{9}
+    \subitem {find\_space\_positions}, \hyperpage{9}
+    \subitem {getValidCipherText}, \hyperpage{10}
+    \subitem {getValidKey}, \hyperpage{10}
+    \subitem {getValidOpenText}, \hyperpage{11}
+    \subitem {key}, \hyperpage{12}
+    \subitem {modAlphaCipher}, \hyperpage{6}
+    \subitem {numAlpha}, \hyperpage{12}
+    \subitem {space\_positions}, \hyperpage{12}
+  \item {modAlphaCipher.cpp}
+    \subitem {isCyrillicLetter}, \hyperpage{17}
+    \subitem {toUpperCyrillic}, \hyperpage{17}
+
+  \indexspace
+
+  \item {numAlpha}
+    \subitem {modAlphaCipher}, \hyperpage{12}
+
+  \indexspace
+
+  \item {route\_cipher/routeCipher.cpp}, \hyperpage{18}
+  \item {route\_cipher/routeCipher.h}, \hyperpage{19}
+  \item {RouteCipher}, \hyperpage{12}
+    \subitem {decrypt}, \hyperpage{14}
+    \subitem {encrypt}, \hyperpage{14}
+    \subitem {key}, \hyperpage{15}
+    \subitem {RouteCipher}, \hyperpage{13}
+
+  \indexspace
+
+  \item {space\_positions}
+    \subitem {modAlphaCipher}, \hyperpage{12}
+
+  \indexspace
+
+  \item {toUpperCyrillic}
+    \subitem {modAlphaCipher.cpp}, \hyperpage{17}
+
+\end{theindex}

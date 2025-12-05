@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лабораторная работа №4 - Полная документация</title>
+    <meta charset="UTF-8">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        #header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        #container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+        #sidebar {
+            width: 250px;
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            overflow-y: auto;
+        }
+        #content {
+            flex: 1;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            margin: 5px 0;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+        }
+        a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        h3 {
+            margin-top: 20px;
+            color: #ecf0f1;
+            border-bottom: 1px solid #4a6278;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>📚 Лабораторная работа №4 - Документирование</h1>
+        <p><strong>Автор:</strong> Тенишев Рамиль | <strong>Дата:</strong> 05.12.2025</p>
+    </div>
+    
+    <div id="container">
+        <div id="sidebar">
+            <h3>📂 Навигация</h3>
+            <a href="docs/html/index.html" target="mainFrame">🏠 Главная страница</a>
+            <a href="docs/html/classes.html" target="mainFrame">📦 Классы</a>
+            <a href="docs/html/files.html" target="mainFrame">📁 Файлы</a>
+            
+            <h3>🔐 Шифры</h3>
+            <a href="docs/html/classmodAlphaCipher.html" target="mainFrame">🔠 modAlphaCipher</a>
+            <a href="docs/html/classRouteCipher.html" target="mainFrame">🔄 RouteCipher</a>
+            
+            <h3>📄 Исходный код</h3>
+            <a href="docs/html/modAlphaCipher_8h.html" target="mainFrame">modAlphaCipher.h</a>
+            <a href="docs/html/modAlphaCipher_8cpp.html" target="mainFrame">modAlphaCipher.cpp</a>
+            <a href="docs/html/routeCipher_8h.html" target="mainFrame">routeCipher.h</a>
+            <a href="docs/html/routeCipher_8cpp.html" target="mainFrame">routeCipher.cpp</a>
+            
+            <h3>⚙️ О проекте</h3>
+            <a href="docs/html/doxygen.png" target="mainFrame">📊 Диаграммы</a>
+            <a href="#" onclick="showAll()">📄 Показать всё</a>
+        </div>
+        
+        <div id="content">
+            <iframe name="mainFrame" src="docs/html/index.html"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        function showAll() {
+            // Создаём новое окно со всей документацией
+            const html = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Вся документация</title>
+                    <style>
+                        body { font-family: Arial; padding: 20px; }
+                        .page { margin-bottom: 50px; border-bottom: 2px solid #ccc; padding-bottom: 20px; }
+                    </style>
+                </head>
+                <body>
+                    <h1>Вся документация в одном файле</h1>
+                    ${document.querySelector('iframe').contentWindow.document.body.innerHTML}
+                </body>
+                </html>
+            `;
+            
+            const win = window.open();
+            win.document.write(html);
+        }
+    </script>
+</body>
+</html>

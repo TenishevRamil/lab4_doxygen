@@ -1,0 +1,228 @@
+\hypertarget{classRouteCipher}{}\doxysubsection{Класс Route\+Cipher}
+\label{classRouteCipher}\index{RouteCipher@{RouteCipher}}
+
+
+Шифрование методом маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$route\+Cipher.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRouteCipher_a72db9f8e6ec440800a9eec4ed53fa5d5}{Route\+Cipher}} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрет конструктора без параметров \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRouteCipher_a15b55fbb35c404d2046520bf350e2cbb}{Route\+Cipher}} (int k)
+\begin{DoxyCompactList}\small\item\em Конструктор для установки ключа \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRouteCipher_a4bc1ee9194a9ed09e12e8b5065b108f3}{encrypt}} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Шифрование текста методом маршрутной перестановки \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRouteCipher_abf0c305386f9205a4b7d5c4ebe36dd27}{decrypt}} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Дешифрование текста методом маршрутной перестановки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}}
+\begin{DoxyCompactList}\small\item\em Количество столбцов таблицы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Подробное описание}
+Шифрование методом маршрутной перестановки 
+
+Класс реализует шифр табличной маршрутной перестановки. Маршрут записи\+: по горизонтали слева направо, сверху вниз. Маршрут считывания\+: сверху вниз, справа налево. \begin{DoxyWarning}{Предупреждения}
+Ключ (количество столбцов) должен быть положительным числом 
+\end{DoxyWarning}
+
+
+См. определение в файле route\+Cipher.\+h строка 32
+
+
+
+\doxysubsubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classRouteCipher_a72db9f8e6ec440800a9eec4ed53fa5d5}\label{classRouteCipher_a72db9f8e6ec440800a9eec4ed53fa5d5}} 
+\index{RouteCipher@{RouteCipher}!RouteCipher@{RouteCipher}}
+\index{RouteCipher@{RouteCipher}!RouteCipher@{RouteCipher}}
+\doxyparagraph{\texorpdfstring{RouteCipher()}{RouteCipher()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Route\+Cipher\+::\+Route\+Cipher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Запрет конструктора без параметров 
+
+\mbox{\Hypertarget{classRouteCipher_a15b55fbb35c404d2046520bf350e2cbb}\label{classRouteCipher_a15b55fbb35c404d2046520bf350e2cbb}} 
+\index{RouteCipher@{RouteCipher}!RouteCipher@{RouteCipher}}
+\index{RouteCipher@{RouteCipher}!RouteCipher@{RouteCipher}}
+\doxyparagraph{\texorpdfstring{RouteCipher()}{RouteCipher()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Route\+Cipher\+::\+Route\+Cipher (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Конструктор для установки ключа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em k} & Количество столбцов таблицы \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если k $<$= 0 \\
+\hline
+\end{DoxyExceptions}
+
+
+См. определение в файле route\+Cipher.\+cpp строка 18
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                               \{}
+\DoxyCodeLine{19     \textcolor{keywordflow}{if} (k <= 0) \{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{throw} \mbox{\hyperlink{classcipher__error}{cipher\_error}}(\textcolor{stringliteral}{"{}Ключ (количество столбцов) должен быть положительным числом"{}});}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} = k;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsubsection{Методы}
+\mbox{\Hypertarget{classRouteCipher_abf0c305386f9205a4b7d5c4ebe36dd27}\label{classRouteCipher_abf0c305386f9205a4b7d5c4ebe36dd27}} 
+\index{RouteCipher@{RouteCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!RouteCipher@{RouteCipher}}
+\doxyparagraph{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::string Route\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Дешифрование текста методом маршрутной перестановки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Зашифрованный текст. Записывается в таблицу по столбцам справа налево, считывается построчно. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст пустой \\
+\hline
+\end{DoxyExceptions}
+
+
+См. определение в файле route\+Cipher.\+cpp строка 50
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                                     \{}
+\DoxyCodeLine{51     \textcolor{keywordflow}{if} (text.empty()) \{}
+\DoxyCodeLine{52         \textcolor{keywordflow}{throw} \mbox{\hyperlink{classcipher__error}{cipher\_error}}(\textcolor{stringliteral}{"{}Текст не может быть пустым"{}});}
+\DoxyCodeLine{53     \}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} rows = (text.length() + \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} -\/ 1) / \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}};}
+\DoxyCodeLine{56     vector<vector<char>> table(rows, vector<char>(\mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}}, \textcolor{charliteral}{' '}));}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{size\_t} index = 0;}
+\DoxyCodeLine{59     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} col = \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} -\/ 1; col >= 0; col-\/-\/) \{}
+\DoxyCodeLine{60         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = 0; row < rows; row++) \{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{if} (row * \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} + col < \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(text.length())) \{}
+\DoxyCodeLine{62                 \textcolor{keywordflow}{if} (index < text.length()) \{}
+\DoxyCodeLine{63                     table[row][col] = text[index++];}
+\DoxyCodeLine{64                 \}}
+\DoxyCodeLine{65             \}}
+\DoxyCodeLine{66         \}}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{string} result;}
+\DoxyCodeLine{70     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = 0; row < rows; row++) \{}
+\DoxyCodeLine{71         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} col = 0; col < \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}}; col++) \{}
+\DoxyCodeLine{72             \textcolor{keywordflow}{if} (row * \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} + col < \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(text.length())) \{}
+\DoxyCodeLine{73                 result += table[row][col];}
+\DoxyCodeLine{74             \}}
+\DoxyCodeLine{75         \}}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{79 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classRouteCipher_a4bc1ee9194a9ed09e12e8b5065b108f3}\label{classRouteCipher_a4bc1ee9194a9ed09e12e8b5065b108f3}} 
+\index{RouteCipher@{RouteCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!RouteCipher@{RouteCipher}}
+\doxyparagraph{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::string Route\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Шифрование текста методом маршрутной перестановки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Текст для шифрования. Записывается в таблицу построчно, считывается по столбцам справа налево. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст пустой \\
+\hline
+\end{DoxyExceptions}
+
+
+См. определение в файле route\+Cipher.\+cpp строка 25
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                                     \{}
+\DoxyCodeLine{26     \textcolor{keywordflow}{if} (text.empty()) \{}
+\DoxyCodeLine{27         \textcolor{keywordflow}{throw} \mbox{\hyperlink{classcipher__error}{cipher\_error}}(\textcolor{stringliteral}{"{}Текст не может быть пустым"{}});}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} rows = (text.length() + \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} -\/ 1) / \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}};}
+\DoxyCodeLine{31     vector<vector<char>> table(rows, vector<char>(\mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}}, \textcolor{charliteral}{' '}));}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < text.length(); i++) \{}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} row = i / \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}};}
+\DoxyCodeLine{35         \textcolor{keywordtype}{int} col = i \% \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}};}
+\DoxyCodeLine{36         table[row][col] = text[i];}
+\DoxyCodeLine{37     \}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} result;}
+\DoxyCodeLine{40     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} col = \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} -\/ 1; col >= 0; col-\/-\/) \{}
+\DoxyCodeLine{41         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = 0; row < rows; row++) \{}
+\DoxyCodeLine{42             \textcolor{keywordflow}{if} (row * \mbox{\hyperlink{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}{key}} + col < \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(text.length())) \{}
+\DoxyCodeLine{43                 result += table[row][col];}
+\DoxyCodeLine{44             \}}
+\DoxyCodeLine{45         \}}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsubsection{Данные класса}
+\mbox{\Hypertarget{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}\label{classRouteCipher_a3fe0c2772f59c90bf2e2f0246646926c}} 
+\index{RouteCipher@{RouteCipher}!key@{key}}
+\index{key@{key}!RouteCipher@{RouteCipher}}
+\doxyparagraph{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily int Route\+Cipher\+::key\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество столбцов таблицы 
+
+
+
+См. определение в файле route\+Cipher.\+h строка 34
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+route\+\_\+cipher/\mbox{\hyperlink{routeCipher_8h}{route\+Cipher.\+h}}\item 
+route\+\_\+cipher/\mbox{\hyperlink{routeCipher_8cpp}{route\+Cipher.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №4 - Документирование: Класс RouteCipher</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №4 - Документирование
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Документирование шифров Гронсфельда и маршрутной перестановки</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="classRouteCipher-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс RouteCipher</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Шифрование методом маршрутной перестановки  
+ <a href="classRouteCipher.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="routeCipher_8h_source.html">routeCipher.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a72db9f8e6ec440800a9eec4ed53fa5d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRouteCipher.html#a72db9f8e6ec440800a9eec4ed53fa5d5">RouteCipher</a> ()=delete</td></tr>
+<tr class="memdesc:a72db9f8e6ec440800a9eec4ed53fa5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрет конструктора без параметров  <a href="classRouteCipher.html#a72db9f8e6ec440800a9eec4ed53fa5d5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a72db9f8e6ec440800a9eec4ed53fa5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b55fbb35c404d2046520bf350e2cbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRouteCipher.html#a15b55fbb35c404d2046520bf350e2cbb">RouteCipher</a> (int k)</td></tr>
+<tr class="memdesc:a15b55fbb35c404d2046520bf350e2cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для установки ключа  <a href="classRouteCipher.html#a15b55fbb35c404d2046520bf350e2cbb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a15b55fbb35c404d2046520bf350e2cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc1ee9194a9ed09e12e8b5065b108f3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRouteCipher.html#a4bc1ee9194a9ed09e12e8b5065b108f3">encrypt</a> (const std::string &amp;text)</td></tr>
+<tr class="memdesc:a4bc1ee9194a9ed09e12e8b5065b108f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шифрование текста методом маршрутной перестановки  <a href="classRouteCipher.html#a4bc1ee9194a9ed09e12e8b5065b108f3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4bc1ee9194a9ed09e12e8b5065b108f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0c305386f9205a4b7d5c4ebe36dd27"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRouteCipher.html#abf0c305386f9205a4b7d5c4ebe36dd27">decrypt</a> (const std::string &amp;text)</td></tr>
+<tr class="memdesc:abf0c305386f9205a4b7d5c4ebe36dd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дешифрование текста методом маршрутной перестановки  <a href="classRouteCipher.html#abf0c305386f9205a4b7d5c4ebe36dd27">Подробнее...</a><br /></td></tr>
+<tr class="separator:abf0c305386f9205a4b7d5c4ebe36dd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a3fe0c2772f59c90bf2e2f0246646926c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a></td></tr>
+<tr class="memdesc:a3fe0c2772f59c90bf2e2f0246646926c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество столбцов таблицы  <a href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3fe0c2772f59c90bf2e2f0246646926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Шифрование методом маршрутной перестановки </p>
+<p>Класс реализует шифр табличной маршрутной перестановки. Маршрут записи: по горизонтали слева направо, сверху вниз. Маршрут считывания: сверху вниз, справа налево. </p><dl class="section warning"><dt>Предупреждения</dt><dd>Ключ (количество столбцов) должен быть положительным числом </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="routeCipher_8h_source.html">routeCipher.h</a> строка <a class="el" href="routeCipher_8h_source.html#l00032">32</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a72db9f8e6ec440800a9eec4ed53fa5d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72db9f8e6ec440800a9eec4ed53fa5d5">&#9670;&nbsp;</a></span>RouteCipher() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RouteCipher::RouteCipher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запрет конструктора без параметров </p>
+
+</div>
+</div>
+<a id="a15b55fbb35c404d2046520bf350e2cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b55fbb35c404d2046520bf350e2cbb">&#9670;&nbsp;</a></span>RouteCipher() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RouteCipher::RouteCipher </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор для установки ключа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Количество столбцов таблицы </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html" title="Класс исключения для ошибок шифрования">cipher_error</a></td><td>если k &lt;= 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="routeCipher_8cpp_source.html">routeCipher.cpp</a> строка <a class="el" href="routeCipher_8cpp_source.html#l00018">18</a></p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                              {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (k &lt;= 0) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classcipher__error.html">cipher_error</a>(<span class="stringliteral">&quot;Ключ (количество столбцов) должен быть положительным числом&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> = k;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="ttc" id="aclassRouteCipher_html_a3fe0c2772f59c90bf2e2f0246646926c"><div class="ttname"><a href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">RouteCipher::key</a></div><div class="ttdeci">int key</div><div class="ttdoc">Количество столбцов таблицы</div><div class="ttdef"><b>Definition:</b> <a href="routeCipher_8h_source.html#l00034">routeCipher.h:34</a></div></div>
+<div class="ttc" id="aclasscipher__error_html"><div class="ttname"><a href="classcipher__error.html">cipher_error</a></div><div class="ttdoc">Класс исключения для ошибок шифрования</div><div class="ttdef"><b>Definition:</b> <a href="modAlphaCipher_8h_source.html#l00014">modAlphaCipher.h:14</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="abf0c305386f9205a4b7d5c4ebe36dd27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0c305386f9205a4b7d5c4ebe36dd27">&#9670;&nbsp;</a></span>decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RouteCipher::decrypt </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дешифрование текста методом маршрутной перестановки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Зашифрованный текст. Записывается в таблицу по столбцам справа налево, считывается построчно. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расшифрованный текст </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html" title="Класс исключения для ошибок шифрования">cipher_error</a></td><td>если текст пустой </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="routeCipher_8cpp_source.html">routeCipher.cpp</a> строка <a class="el" href="routeCipher_8cpp_source.html#l00050">50</a></p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (text.empty()) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classcipher__error.html">cipher_error</a>(<span class="stringliteral">&quot;Текст не может быть пустым&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> rows = (text.length() + <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> - 1) / <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    vector&lt;vector&lt;char&gt;&gt; table(rows, vector&lt;char&gt;(<a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a>, <span class="charliteral">&#39; &#39;</span>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">size_t</span> index = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> - 1; col &gt;= 0; col--) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; rows; row++) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span> (row * <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> + col &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(text.length())) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">if</span> (index &lt; text.length()) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    table[row][col] = text[index++];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">string</span> result;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; rows; row++) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a>; col++) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">if</span> (row * <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> + col &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(text.length())) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                result += table[row][col];</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4bc1ee9194a9ed09e12e8b5065b108f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc1ee9194a9ed09e12e8b5065b108f3">&#9670;&nbsp;</a></span>encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RouteCipher::encrypt </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шифрование текста методом маршрутной перестановки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Текст для шифрования. Записывается в таблицу построчно, считывается по столбцам справа налево. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Зашифрованный текст </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html" title="Класс исключения для ошибок шифрования">cipher_error</a></td><td>если текст пустой </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="routeCipher_8cpp_source.html">routeCipher.cpp</a> строка <a class="el" href="routeCipher_8cpp_source.html#l00025">25</a></p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (text.empty()) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classcipher__error.html">cipher_error</a>(<span class="stringliteral">&quot;Текст не может быть пустым&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> rows = (text.length() + <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> - 1) / <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    vector&lt;vector&lt;char&gt;&gt; table(rows, vector&lt;char&gt;(<a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a>, <span class="charliteral">&#39; &#39;</span>));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; text.length(); i++) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">int</span> row = i / <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">int</span> col = i % <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        table[row][col] = text[i];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">string</span> result;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> - 1; col &gt;= 0; col--) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; rows; row++) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">if</span> (row * <a class="code" href="classRouteCipher.html#a3fe0c2772f59c90bf2e2f0246646926c">key</a> + col &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(text.length())) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                result += table[row][col];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a3fe0c2772f59c90bf2e2f0246646926c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe0c2772f59c90bf2e2f0246646926c">&#9670;&nbsp;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RouteCipher::key</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество столбцов таблицы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="routeCipher_8h_source.html">routeCipher.h</a> строка <a class="el" href="routeCipher_8h_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>route_cipher/<a class="el" href="routeCipher_8h_source.html">routeCipher.h</a></li>
+<li>route_cipher/<a class="el" href="routeCipher_8cpp_source.html">routeCipher.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

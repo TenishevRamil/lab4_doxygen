@@ -1,0 +1,88 @@
+\hypertarget{modAlphaCipher_8cpp}{}\doxysubsection{Файл gronsfeld/mod\+Alpha\+Cipher.cpp}
+\label{modAlphaCipher_8cpp}\index{gronsfeld/modAlphaCipher.cpp@{gronsfeld/modAlphaCipher.cpp}}
+
+
+Реализация шифра Гронсфельда для русского алфавита  
+
+
+{\ttfamily \#include \char`\"{}mod\+Alpha\+Cipher.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$codecvt$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cwctype$>$}\newline
+Граф включаемых заголовочных файлов для mod\+Alpha\+Cipher.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{modAlphaCipher_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{modAlphaCipher_8cpp_a6152f52c8377a43c3a1ce665b28a6217}{is\+Cyrillic\+Letter}} (wchar\+\_\+t c)
+\item 
+wchar\+\_\+t \mbox{\hyperlink{modAlphaCipher_8cpp_a2632578993f08b1bee2694957cd0562b}{to\+Upper\+Cyrillic}} (wchar\+\_\+t c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Подробное описание}
+Реализация шифра Гронсфельда для русского алфавита 
+
+\begin{DoxyAuthor}{Автор}
+Тенишев Рамиль 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+05.\+12.\+2025 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+Учебный проект 
+\end{DoxyCopyright}
+\begin{DoxyWarning}{Предупреждения}
+Это учебный пример 
+\end{DoxyWarning}
+
+
+\doxysubsubsection{Функции}
+\mbox{\Hypertarget{modAlphaCipher_8cpp_a6152f52c8377a43c3a1ce665b28a6217}\label{modAlphaCipher_8cpp_a6152f52c8377a43c3a1ce665b28a6217}} 
+\index{modAlphaCipher.cpp@{modAlphaCipher.cpp}!isCyrillicLetter@{isCyrillicLetter}}
+\index{isCyrillicLetter@{isCyrillicLetter}!modAlphaCipher.cpp@{modAlphaCipher.cpp}}
+\doxyparagraph{\texorpdfstring{isCyrillicLetter()}{isCyrillicLetter()}}
+{\footnotesize\ttfamily bool is\+Cyrillic\+Letter (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{c }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле mod\+Alpha\+Cipher.\+cpp строка 18
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                                  \{}
+\DoxyCodeLine{19     \textcolor{keywordflow}{return} (c >= L\textcolor{stringliteral}{'А'} \&\& c <= L\textcolor{stringliteral}{'Я'}) || (c >= L\textcolor{stringliteral}{'а'} \&\& c <= L\textcolor{stringliteral}{'я'}) || c == L\textcolor{stringliteral}{'Ё'} || c == L\textcolor{stringliteral}{'ё'};}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{modAlphaCipher_8cpp_a2632578993f08b1bee2694957cd0562b}\label{modAlphaCipher_8cpp_a2632578993f08b1bee2694957cd0562b}} 
+\index{modAlphaCipher.cpp@{modAlphaCipher.cpp}!toUpperCyrillic@{toUpperCyrillic}}
+\index{toUpperCyrillic@{toUpperCyrillic}!modAlphaCipher.cpp@{modAlphaCipher.cpp}}
+\doxyparagraph{\texorpdfstring{toUpperCyrillic()}{toUpperCyrillic()}}
+{\footnotesize\ttfamily wchar\+\_\+t to\+Upper\+Cyrillic (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{c }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле mod\+Alpha\+Cipher.\+cpp строка 23
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                    \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{if} (c >= L\textcolor{stringliteral}{'а'} \&\& c <= L\textcolor{stringliteral}{'я'}) \{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{return} c -\/ (L\textcolor{stringliteral}{'а'} -\/ L\textcolor{stringliteral}{'А'});}
+\DoxyCodeLine{26     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (c == L\textcolor{stringliteral}{'ё'}) \{}
+\DoxyCodeLine{27         \textcolor{keywordflow}{return} L\textcolor{stringliteral}{'Ё'};}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29     \textcolor{keywordflow}{return} c;}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
